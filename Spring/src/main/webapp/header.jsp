@@ -29,30 +29,21 @@
 <header>
 
 	<nav class="navbar navbar-expand-lg navbar-dark black">
-		<div class="container">
+		
 			<a class="navbar-brand" href="/AutoM/index.jsp"><strong>Auto
 					servis</strong></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-controls="navbarSupportedContent" aria-expanded="true"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link"
+					<li class="nav-item"><a class="nav-link"
 						href="/AutoM/index.jsp">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<s:authorize access="hasRole('1')">
-						<li class="nav-item"><a class="nav-link"
-							href="/AutoM/controllerS/admin/ucitajZaPopravku">Dodaj
-								popravku</a></li>
-						<li class="nav-item"><a class="nav-link"
-							href="/AutoM/controllerS/admin/ucitajZaIzvestaj">Izveštaji</a></li>
-
-						<li class="nav-item"><a class="nav-link"
-							href="/AutoM/admin/dodajUsluge.jsp">Dodaj usluge servisa</a></li>
-					</s:authorize>
+			
 
 					<s:authorize access="isAuthenticated()">
 						<li class="nav-item"><a class="nav-link"
@@ -64,7 +55,15 @@
 					</s:authorize>
 					<s:authorize access="hasRole('1')">
 						<li class="nav-item"><a class="nav-link"
-							href="/AutoM/admin/dodaj.jsp">Dodaj</a></li>
+							href="/AutoM/admin/dodaj.jsp">Zaposli majstora</a></li>
+							<li class="nav-item"><a class="nav-link"
+							href="/AutoM/controllerS/admin/ucitajZaPopravku">Dodaj
+								popravku</a></li>
+						<li class="nav-item"><a class="nav-link"
+							href="/AutoM/controllerS/admin/ucitajZaIzvestaj">Izveštaji</a></li>
+
+						<li class="nav-item"><a class="nav-link"
+							href="/AutoM/admin/dodajUsluge.jsp">Dodaj usluge servisa</a></li>
 					</s:authorize>
 					
 
@@ -82,7 +81,7 @@
 					</s:authorize>
 				</ul>
 			</div>
-		</div>
+	
 	</nav>
 
 	<!--   <div class="view intro-2"> -->
