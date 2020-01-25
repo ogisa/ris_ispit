@@ -1,0 +1,23 @@
+.view {
+    background: url("https://ae01.alicdn.com/kf/HTB1aRhrnH1YBuNjSszhq6AUsFXas/Capisco-Car-Repair-Shop-Tool-Holder-Scene-Photography-Backgrounds-Vinyl-Custom-Camera-Photographic-Backdrops-For-Photo.jpg")no-repeat center center;
+    background-size: cover;
+}
+/* @media (min-width: 56px) { */
+/*     .view { */
+/*         overflow: visible; */
+/*         margin-top: -56px; */
+/*     } */
+/* } */
+.navbar {
+    z-index: 1;
+}
+
+html,
+body,
+.view {
+  height: 100%;
+}
+.form-check-label
+{
+	margin: 10px;
+}
