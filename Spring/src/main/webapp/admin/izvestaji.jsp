@@ -28,7 +28,7 @@
 										<div>
 											<select class="browser-default custom-select" id="select"
 												name="idR">
-												<option value="" disabled selected>Izaberi majstora</option>
+												<option value="" selected>Sve popravke izmedju datuma</option>
 												<c:forEach items="${majstori }" var="m">
 													<option value="${m.idRadnik }">${m.ime }
 														(${m.korIme }) ${m.prezime }</option>
