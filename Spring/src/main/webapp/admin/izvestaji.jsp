@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Izvestaji</title>
+<title>Izveštaji</title>
 </head>
 <body>
 	<div class="view intro-2">

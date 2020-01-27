@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Izvestaji</title>
+<title>Dodaj usluge</title>
 </head>
 <body>
 	<div class="view intro-2">

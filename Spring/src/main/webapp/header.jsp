@@ -23,11 +23,11 @@
 <link href="/AutoM/css/style.css" rel="stylesheet">
 
 <html lang="sr" class="full-height">
-
+<link rel="icon" href="https://i.dlpng.com/static/png/1254968-tool-png-tool-png-512_512_preview.png">
 <!--Main Navigation-->
 <meta charset="UTF-8">
 <header>
-
+	
 	<nav class="navbar navbar-expand-lg navbar-dark black">
 		
 			<a class="navbar-brand" href="/AutoM/index.jsp"><strong>Auto
@@ -49,9 +49,9 @@
 						<li class="nav-item"><a class="nav-link"
 							href="/AutoM/controllerS/users/ucitajPopravke">Moje popravke</a>
 						</li>
-						<li class="nav-item"><a class="nav-link"
-							href="/AutoM/controllerS/users/ucitajZaBrojPopravki">Broj popravki</a>
-						</li>
+<!-- 						<li class="nav-item"><a class="nav-link" -->
+<!-- 							href="/AutoM/controllerS/users/ucitajZaBrojPopravki">Broj popravki</a> -->
+<!-- 						</li> -->
 					</s:authorize>
 					<s:authorize access="hasRole('1')">
 						<li class="nav-item"><a class="nav-link"

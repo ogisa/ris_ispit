@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Insert title here</title>
+<title>Access denied</title>
 </head>
 <body>
   <div class="view intro-2">

@@ -236,24 +236,24 @@ public class ControllerS {
 		return "/admin/izvestaji";
 	}
 
-	@RequestMapping(value = "/users/ucitajZaBrojPopravki", method = RequestMethod.GET)
-	public String ucitajBr(HttpServletRequest request) {
-		request.getSession().setAttribute("majstori", rr.findAll());
-		Date d = new Date();
-
-		SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
-		StringBuffer str = new StringBuffer();
-		StringBuffer pre = new StringBuffer();
-		FieldPosition fp = new FieldPosition(3);
-		Calendar cal = Calendar.getInstance();
-		cal.add(Calendar.MONTH, -1);
-
-		sd.format(d, str, fp);
-		sd.format(cal.getTime(), pre, fp);
-		request.getSession().setAttribute("pre", pre.toString());
-		request.getSession().setAttribute("danas", str.toString());
-		return "/users/brojPopravki";
-	}
+//	@RequestMapping(value = "/users/ucitajZaBrojPopravki", method = RequestMethod.GET)
+//	public String ucitajBr(HttpServletRequest request) {
+//		request.getSession().setAttribute("majstori", rr.findAll());
+//		Date d = new Date();
+//
+//		SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
+//		StringBuffer str = new StringBuffer();
+//		StringBuffer pre = new StringBuffer();
+//		FieldPosition fp = new FieldPosition(3);
+//		Calendar cal = Calendar.getInstance();
+//		cal.add(Calendar.MONTH, -1);
+//
+//		sd.format(d, str, fp);
+//		sd.format(cal.getTime(), pre, fp);
+//		request.getSession().setAttribute("pre", pre.toString());
+//		request.getSession().setAttribute("danas", str.toString());
+//		return "/users/brojPopravki";
+//	}
 
 	@RequestMapping(value = "/admin/dodajVoziloRadniku", method = RequestMethod.POST)
 	public String dodajVoziloRadniku(HttpServletRequest request, int idV, int idR, String opis) {
@@ -330,17 +330,17 @@ public class ControllerS {
 		}
 	}
 
-	@RequestMapping(value = "/users/brPopravki", method = RequestMethod.POST)
-	public String brP(HttpServletRequest request, int idR, String pocetak, String kraj) throws Exception {
-		Radnik r = rr.getOne(idR);
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-		Date p = format.parse(pocetak);
-		Date k = format.parse(kraj);
-		List<Popravka> popravke = pr.getPopravkasFromRadnikDate(idR, p, k);
-		String info = "Majstor " + r.getIme() + " " + r.getPrezime() + " je imao " + popravke.size() + " popravki Od: "
-				+ pocetak + " Do: " + kraj;
-		request.getSession().setAttribute("radnikPod", info);
-		return "/users/brojPopravki";
-	}
+//	@RequestMapping(value = "/users/brPopravki", method = RequestMethod.POST)
+//	public String brP(HttpServletRequest request, int idR, String pocetak, String kraj) throws Exception {
+//		Radnik r = rr.getOne(idR);
+//		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+//		Date p = format.parse(pocetak);
+//		Date k = format.parse(kraj);
+//		List<Popravka> popravke = pr.getPopravkasFromRadnikDate(idR, p, k);
+//		String info = "Majstor " + r.getIme() + " " + r.getPrezime() + " je imao " + popravke.size() + " popravki Od: "
+//				+ pocetak + " Do: " + kraj;
+//		request.getSession().setAttribute("radnikPod", info);
+//		return "/users/brojPopravki";
+//	}
 
 }

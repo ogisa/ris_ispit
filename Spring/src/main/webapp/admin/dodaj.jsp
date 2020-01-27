@@ -6,7 +6,7 @@
 <html>
 <meta charset="UTF-8">
 <head>
-<title>Insert title here</title>
+<title>Zaposli radnika</title>
 </head>
 <body>
 

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Početna stranica</title>
 </head>
 <body>
   <div class="view intro-2">
@@ -13,7 +13,7 @@
 	      <div class="mask rgba-black-strong flex-center">
 	        <div class="container">
 	          <div class="white-text text-center wow fadeInUp">
-	            <h2>Dobro došli u vaš servis</h2>
+	            <h2>Dobro došli u Vaš servis</h2>
 	         
 	          </div>
 	        </div>
