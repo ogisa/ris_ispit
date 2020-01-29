@@ -271,20 +271,17 @@ public class ControllerS {
 		return "/admin/ubaciPopravku";
 	}
 
-	OutputStream out;
+	
 
 	@RequestMapping(value = "/admin/izvestaj", method = RequestMethod.POST)
 	public void izvestaj(HttpServletRequest request, HttpServletResponse response, Integer idR, String pocetak,
 			String kraj) {
-		if (out == null) {
-			try {
-				out = response.getOutputStream();
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-		}
-		try {
+		
+			try(OutputStream out=response.getOutputStream();) {
+				
+			
+		
+	
 
 			List<Popravka> popravke;
 			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
@@ -322,7 +319,6 @@ public class ControllerS {
 			response.addHeader("Content-disposition", "attachment; filename=" + naziv + "_izvestaj.pdf");
 			JasperExportManager.exportReportToPdfStream(jasperPrint, out);
 			out.flush();
-			out.close();
 		} catch (IOException | JRException e) {
 			e.printStackTrace();
 		} catch (ParseException e) {
